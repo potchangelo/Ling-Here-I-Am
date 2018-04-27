@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ED9AF0ABB2484D36B2811BF /* Pods_Ling_Here_I_Am.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B91170E841F904C0590868 /* Pods_Ling_Here_I_Am.framework */; };
+		DD2D86342091E083008D7C4F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D86332091E083008D7C4F /* LoginViewController.swift */; };
+		DD2D86362091E08D008D7C4F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D86352091E08D008D7C4F /* SignupViewController.swift */; };
+		DD871C5B2092E812003526F1 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD871C5A2092E812003526F1 /* UserLocation.swift */; };
+		DD871C5D2092EFAB003526F1 /* UsersLocationCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD871C5C2092EFAB003526F1 /* UsersLocationCollection.swift */; };
+		DDE8E7062091D1A200067C54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8E7052091D1A200067C54 /* AppDelegate.swift */; };
+		DDE8E70B2091D1A200067C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE8E7092091D1A200067C54 /* Main.storyboard */; };
+		DDE8E70D2091D1A400067C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE8E70C2091D1A400067C54 /* Assets.xcassets */; };
+		DDE8E7102091D1A400067C54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE8E70E2091D1A400067C54 /* LaunchScreen.storyboard */; };
+		DDEEC79E2091D56800A1D6C3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEEC79D2091D56800A1D6C3 /* MapViewController.swift */; };
+		DDEEC7A32091D57D00A1D6C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDEEC7A12091D57D00A1D6C3 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30B91170E841F904C0590868 /* Pods_Ling_Here_I_Am.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ling_Here_I_Am.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E4D93963F16EA340A7741A /* Pods-Ling Here I Am.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ling Here I Am.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ling Here I Am/Pods-Ling Here I Am.debug.xcconfig"; sourceTree = "<group>"; };
+		DD2D86332091E083008D7C4F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DD2D86352091E08D008D7C4F /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		DD871C5A2092E812003526F1 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		DD871C5C2092EFAB003526F1 /* UsersLocationCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersLocationCollection.swift; sourceTree = "<group>"; };
+		DDE8E7022091D1A200067C54 /* Ling Here I Am.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ling Here I Am.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE8E7052091D1A200067C54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDE8E70A2091D1A200067C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDE8E70C2091D1A400067C54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDE8E70F2091D1A400067C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDEEC79D2091D56800A1D6C3 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DDEEC7A12091D57D00A1D6C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDEEC7A22091D57D00A1D6C3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B5EDE50016460D88F2E558 /* Pods-Ling Here I Am.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ling Here I Am.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ling Here I Am/Pods-Ling Here I Am.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDE8E6FF2091D1A200067C54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED9AF0ABB2484D36B2811BF /* Pods_Ling_Here_I_Am.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDE8E6F92091D1A200067C54 = {
+			isa = PBXGroup;
+			children = (
+				DDE8E7042091D1A200067C54 /* Ling Here I Am */,
+				DDE8E7032091D1A200067C54 /* Products */,
+				E5D6289C9FC85D60356C82E6 /* Pods */,
+				F69CCC2C70B00A99995B36A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDE8E7032091D1A200067C54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDE8E7022091D1A200067C54 /* Ling Here I Am.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDE8E7042091D1A200067C54 /* Ling Here I Am */ = {
+			isa = PBXGroup;
+			children = (
+				DDEEC79C2091D56800A1D6C3 /* Controllers */,
+				DDEEC79F2091D57400A1D6C3 /* Models */,
+				DDEEC7A52091D5A000A1D6C3 /* Storyboards */,
+				DDEEC7A02091D57D00A1D6C3 /* Plists */,
+				DDE8E7052091D1A200067C54 /* AppDelegate.swift */,
+				DDE8E70C2091D1A400067C54 /* Assets.xcassets */,
+			);
+			path = "Ling Here I Am";
+			sourceTree = "<group>";
+		};
+		DDEEC79C2091D56800A1D6C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDEEC79D2091D56800A1D6C3 /* MapViewController.swift */,
+				DD2D86332091E083008D7C4F /* LoginViewController.swift */,
+				DD2D86352091E08D008D7C4F /* SignupViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDEEC79F2091D57400A1D6C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD871C5A2092E812003526F1 /* UserLocation.swift */,
+				DD871C5C2092EFAB003526F1 /* UsersLocationCollection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDEEC7A02091D57D00A1D6C3 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				DDEEC7A12091D57D00A1D6C3 /* GoogleService-Info.plist */,
+				DDEEC7A22091D57D00A1D6C3 /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		DDEEC7A52091D5A000A1D6C3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DDE8E7092091D1A200067C54 /* Main.storyboard */,
+				DDE8E70E2091D1A400067C54 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E5D6289C9FC85D60356C82E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8E4D93963F16EA340A7741A /* Pods-Ling Here I Am.debug.xcconfig */,
+				F3B5EDE50016460D88F2E558 /* Pods-Ling Here I Am.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F69CCC2C70B00A99995B36A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30B91170E841F904C0590868 /* Pods_Ling_Here_I_Am.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDE8E7012091D1A200067C54 /* Ling Here I Am */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE8E7142091D1A400067C54 /* Build configuration list for PBXNativeTarget "Ling Here I Am" */;
+			buildPhases = (
+				8419E3BC0DC75A5D3D005A42 /* [CP] Check Pods Manifest.lock */,
+				DDE8E6FE2091D1A200067C54 /* Sources */,
+				DDE8E6FF2091D1A200067C54 /* Frameworks */,
+				DDE8E7002091D1A200067C54 /* Resources */,
+				D032E5C0AE4F7A237E7F61FA /* [CP] Embed Pods Frameworks */,
+				F2AFD76D2C5DC9A7D6068E9E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ling Here I Am";
+			productName = "Ling Here I Am";
+			productReference = DDE8E7022091D1A200067C54 /* Ling Here I Am.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDE8E6FA2091D1A200067C54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Potchara Puttawanchai";
+				TargetAttributes = {
+					DDE8E7012091D1A200067C54 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = DDE8E6FD2091D1A200067C54 /* Build configuration list for PBXProject "Ling Here I Am" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDE8E6F92091D1A200067C54;
+			productRefGroup = DDE8E7032091D1A200067C54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDE8E7012091D1A200067C54 /* Ling Here I Am */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDE8E7002091D1A200067C54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE8E7102091D1A400067C54 /* LaunchScreen.storyboard in Resources */,
+				DDEEC7A32091D57D00A1D6C3 /* GoogleService-Info.plist in Resources */,
+				DDE8E70D2091D1A400067C54 /* Assets.xcassets in Resources */,
+				DDE8E70B2091D1A200067C54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8419E3BC0DC75A5D3D005A42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ling Here I Am-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D032E5C0AE4F7A237E7F61FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ling Here I Am/Pods-Ling Here I Am-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ling Here I Am/Pods-Ling Here I Am-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2AFD76D2C5DC9A7D6068E9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ling Here I Am/Pods-Ling Here I Am-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ling Here I Am/Pods-Ling Here I Am-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDE8E6FE2091D1A200067C54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2D86342091E083008D7C4F /* LoginViewController.swift in Sources */,
+				DDEEC79E2091D56800A1D6C3 /* MapViewController.swift in Sources */,
+				DD2D86362091E08D008D7C4F /* SignupViewController.swift in Sources */,
+				DDE8E7062091D1A200067C54 /* AppDelegate.swift in Sources */,
+				DD871C5B2092E812003526F1 /* UserLocation.swift in Sources */,
+				DD871C5D2092EFAB003526F1 /* UsersLocationCollection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDE8E7092091D1A200067C54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDE8E70A2091D1A200067C54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDE8E70E2091D1A400067C54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDE8E70F2091D1A400067C54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDE8E7122091D1A400067C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDE8E7132091D1A400067C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDE8E7152091D1A400067C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E4D93963F16EA340A7741A /* Pods-Ling Here I Am.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3K8KT8LA8;
+				INFOPLIST_FILE = "$(SRCROOT)/Ling Here I Am/Plists/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Ling-Here-I-Am";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDE8E7162091D1A400067C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B5EDE50016460D88F2E558 /* Pods-Ling Here I Am.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3K8KT8LA8;
+				INFOPLIST_FILE = "$(SRCROOT)/Ling Here I Am/Plists/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Ling-Here-I-Am";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDE8E6FD2091D1A200067C54 /* Build configuration list for PBXProject "Ling Here I Am" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE8E7122091D1A400067C54 /* Debug */,
+				DDE8E7132091D1A400067C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE8E7142091D1A400067C54 /* Build configuration list for PBXNativeTarget "Ling Here I Am" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE8E7152091D1A400067C54 /* Debug */,
+				DDE8E7162091D1A400067C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDE8E6FA2091D1A200067C54 /* Project object */;
+}
