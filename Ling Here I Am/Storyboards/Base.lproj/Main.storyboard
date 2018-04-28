@@ -75,15 +75,21 @@
                                     <action selector="togglePlayStopClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iky-NF-8q3"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="94X-0S-Tr6">
+                                <rect key="frame" x="177" y="40" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KGJ-L6-Xcu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="0Vm-uJ-lY9"/>
+                            <constraint firstItem="94X-0S-Tr6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Tk-gc-3Bk"/>
                             <constraint firstItem="AD8-51-1bW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3x1-lm-RHb"/>
                             <constraint firstItem="wJG-yX-yYW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="DIh-cR-PMQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6aj-RO-S9U" secondAttribute="bottom" constant="16" id="DZn-Oa-W44"/>
                             <constraint firstAttribute="bottom" secondItem="AD8-51-1bW" secondAttribute="bottom" id="G1l-0g-EfU"/>
                             <constraint firstItem="wJG-yX-yYW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="haZ-Cr-anG"/>
+                            <constraint firstItem="94X-0S-Tr6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hi1-uW-IWp"/>
                             <constraint firstItem="AD8-51-1bW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jD7-wG-fco"/>
                             <constraint firstItem="KGJ-L6-Xcu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="t2Y-0a-cD6"/>
                             <constraint firstAttribute="trailing" secondItem="AD8-51-1bW" secondAttribute="trailing" id="tUb-LI-2pC"/>
@@ -95,6 +101,7 @@
                         <outlet property="authStackView" destination="wJG-yX-yYW" id="enw-Pn-GZN"/>
                         <outlet property="logoutButton" destination="KGJ-L6-Xcu" id="pzc-Ox-kOW"/>
                         <outlet property="mapView" destination="AD8-51-1bW" id="UkH-j1-C5z"/>
+                        <outlet property="refreshingIndicator" destination="94X-0S-Tr6" id="WSD-9t-ypO"/>
                         <outlet property="togglePlayStopButton" destination="6aj-RO-S9U" id="oP6-Tn-nH7"/>
                     </connections>
                 </viewController>

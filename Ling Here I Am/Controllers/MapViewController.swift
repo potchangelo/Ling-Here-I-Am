@@ -33,7 +33,7 @@ class MapViewController: UIViewController {
     
     var updateMySharedLocationTimer: Timer?
     var fetchOthersSharedLocationTimer: Timer?
-    var delayPlayingTimer: Timer?
+    var delayFetchingTimer: Timer?
     
     // MARK: -- Firebase
     
@@ -45,6 +45,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var authStackView: UIStackView!
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var togglePlayStopButton: UIButton!
+    @IBOutlet weak var refreshingIndicator: UIActivityIndicatorView!
     
     // MARK: - Constants
     
@@ -52,7 +53,7 @@ class MapViewController: UIViewController {
     let defaultZoom: Float = 16.0
     
     let refreshLocationInterval = 30.0
-    let delayPlayingInterval = 2.5
+    let delayFetchingInterval = 4.0
     
     // MARK: - Functions : Lifecycles
     
@@ -101,6 +102,17 @@ class MapViewController: UIViewController {
     // MARK: -- Reading
     
     @objc func fetchOthersSharedLocation() {
+        // If client user not shares location anymore, skip fetching
+        // For prevent stop-clicked event & fetch location timing problem
+        // Preventing for before fetching
+        if !self.myLocation.isShared {
+            print("Firebase : isShared == false, stop fetch others location")
+            return
+        }
+        
+        // Start refreshing indicator
+        self.refreshingIndicator.startAnimating()
+        
         // Firebase : Get all now-playing users location
         self.fsRef.collection("usersLocation").whereField("isShared", isEqualTo: true).getDocuments { (querySnapshot, error) in
             if let error = error {
@@ -108,6 +120,17 @@ class MapViewController: UIViewController {
                 return
             }
             print("Firebase : Fetch others location completed")
+            
+            // Stop refreshing indicator
+            self.refreshingIndicator.stopAnimating()
+            
+            // If client user not shares location anymore, skip fetching
+            // For prevent stop-clicked event & fetch location timing problem
+            // Preventing for after fetching
+            if !self.myLocation.isShared {
+                print("Firebase : isShared == false, stop fetch others location")
+                return
+            }
             
             guard let querySnapshot = querySnapshot else { return }
             
@@ -132,6 +155,13 @@ class MapViewController: UIViewController {
     // MARK: -- Writing
     
     @objc func updateMySharedLocation() {
+        // If client user not shares location anymore, skip updating
+        // For prevent stop-clicked event & update location timing problem
+        if !self.myLocation.isShared {
+            print("Firebase : isShared == false, stop update my location")
+            return
+        }
+        
         // Firebase : Update my location, if document exists
         self.fsRef.collection("usersLocation").document(self.myLocation.uid).updateData(self.myLocation.refinedUpdatedSharedUserLocation) { (error) in
             if let error = error {
@@ -155,7 +185,7 @@ class MapViewController: UIViewController {
         self.locationManager = CLLocationManager()
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.distanceFilter = 50
+        self.locationManager.distanceFilter = 3
         self.locationManager.startUpdatingLocation()
         self.locationManager.delegate = self
     }
@@ -203,7 +233,8 @@ class MapViewController: UIViewController {
     
     func startPlaying() {
         // Update buttons state
-        self.togglePlayStopButton.isEnabled = false
+        self.togglePlayStopButton.setTitle("STOP", for: .normal)
+        //self.togglePlayStopButton.isEnabled = false
         self.logoutButton.isEnabled = false
         
         // Enable sharing
@@ -215,15 +246,9 @@ class MapViewController: UIViewController {
         // - Then, every 30 seconds
         self.updateMySharedLocationTimer = Timer.scheduledTimer(timeInterval: self.refreshLocationInterval, target: self, selector: #selector(updateMySharedLocation), userInfo: nil, repeats: true)
         
-        // Delay playing for 2.5 seconds
-        // To make sure that any users location data is updated to latest data on Firebase
-        self.delayPlayingTimer = Timer.scheduledTimer(withTimeInterval: self.delayPlayingInterval, repeats: false, block: { (timer) in
-            // Update buttons state
-            self.togglePlayStopButton.setTitle("STOP", for: .normal)
-            self.togglePlayStopButton.isEnabled = true
-            self.logoutButton.isEnabled = false
-
-            
+        // Delay playing for 4 seconds
+        // To make sure to get updated data on Firebase
+        self.delayFetchingTimer = Timer.scheduledTimer(withTimeInterval: self.delayFetchingInterval, repeats: false, block: { (timer) in
             // Fetch others location from Firebase
             // - Immediately for first time
             self.fetchOthersSharedLocation()
@@ -237,6 +262,9 @@ class MapViewController: UIViewController {
         self.togglePlayStopButton.setTitle("PLAY", for: .normal)
         self.logoutButton.isEnabled = true
         
+        // Stop refreshing indicator
+        self.refreshingIndicator.stopAnimating()
+        
         // Disable sharing
         self.myLocation.isShared = false
         
@@ -246,7 +274,7 @@ class MapViewController: UIViewController {
         // Stop all timers
         self.updateMySharedLocationTimer?.invalidate()
         self.fetchOthersSharedLocationTimer?.invalidate()
-        self.delayPlayingTimer?.invalidate()
+        self.delayFetchingTimer?.invalidate()
         
         // Unset my shared location to Firebase
         unsetMySharedLocation()
